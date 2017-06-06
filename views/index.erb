@@ -1,0 +1,13 @@
+<p><a href="/pizza/new">Order Pizza</a></p>
+
+<p>All the pizzas!</p>
+
+
+
+<% for pizza in @pizzas %>
+<p><a href="/customer/<%= pizza.customer.id %>">Customer Name: <%= pizza.customer.name %></a></p>
+<p>Order: <%=pizza.quantity %> x <%= pizza.topping %>  </p>
+<p><a href="/pizza/<%= pizza.id %>">Show order</a></p>
+<hr />
+<% end %>
+

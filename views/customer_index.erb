@@ -1,0 +1,10 @@
+<p><a href="/customer/new">Make new customer</a></p>
+
+<p>All customers</p>
+
+<% for customer in @customers %>
+<p>Customer ID: <%= customer.id%></p>
+<p><a href="/customer/<%= customer.id %>">Customer name: <%= customer.name %></a></p>
+<hr />
+<% end %>
+
